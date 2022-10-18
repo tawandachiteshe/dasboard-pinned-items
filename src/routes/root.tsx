@@ -50,7 +50,6 @@ const Root = () => {
         setValue(newValue);
     };
 
-    const [items, setItems] = useState<Item[]>([]);
 
     return (
         <ThemeProvider theme={theme}>
