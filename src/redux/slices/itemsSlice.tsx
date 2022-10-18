@@ -1,7 +1,7 @@
 import {Item} from "../../types/types";
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 import {RootState} from "../store";
-import {green, red} from "@mui/material/colors";
+import {blue, brown, green, pink, red, yellow} from "@mui/material/colors";
 
 const pageOneItems: Item[] = [
     {
@@ -18,7 +18,7 @@ const pageOneItems: Item[] = [
         page: 1,
         isDashboard: false,
         isPinned: false,
-        color: green[400]
+        color: pink[400]
     },
     {
         index: 3,
@@ -26,7 +26,7 @@ const pageOneItems: Item[] = [
         page: 1,
         isDashboard: false,
         isPinned: false,
-        color: green[400]
+        color: yellow[400]
     },
     {
         index: 4,
@@ -34,7 +34,7 @@ const pageOneItems: Item[] = [
         page: 1,
         isDashboard: false,
         isPinned: false,
-        color: green[400]
+        color: brown[400]
     }
 ]
 
@@ -54,7 +54,7 @@ const pageTwoItems: Item[] = [
         page: 2,
         isDashboard: false,
         isPinned: false,
-        color: red[400]
+        color: blue[400]
     },
     {
         index: 7,
@@ -62,7 +62,7 @@ const pageTwoItems: Item[] = [
         page: 2,
         isDashboard: false,
         isPinned: false,
-        color: red[400]
+        color: green[300]
     },
     {
         index: 8,
@@ -70,7 +70,7 @@ const pageTwoItems: Item[] = [
         page: 2,
         isDashboard: false,
         isPinned: false,
-        color: red[400]
+        color: yellow[700]
     }
 ]
 
