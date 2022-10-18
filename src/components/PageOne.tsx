@@ -1,7 +1,5 @@
 import {Grid} from "@mui/material";
 import React from "react";
-import {Item} from "../types/types";
-import {green} from "@mui/material/colors";
 import {CardItem} from "./Card";
 import {useAppSelector} from "../hooks";
 import {selectItems} from "../redux/slices/itemsSlice";

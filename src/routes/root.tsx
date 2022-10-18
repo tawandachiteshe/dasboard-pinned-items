@@ -1,29 +1,23 @@
 import {
-    AppBar,
-    Box,
     Button,
     createTheme,
     Grid,
-    IconButton,
     Paper,
     Tab,
     Tabs,
     ThemeProvider,
-    Toolbar,
     Typography
 } from "@mui/material";
-import React, {useState} from "react";
-import {green, purple} from "@mui/material/colors";
+import React from "react";
+import {green} from "@mui/material/colors";
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import {Dashboard} from "../components/Dashboard";
 import {PageOne} from "../components/PageOne";
 import {PageTwo} from "../components/PageTwo";
-import {Item} from "../types/types";
 import {Provider} from "react-redux";
 import {store} from "../redux/store";
 
 
-const navItems = ['Home', 'About', 'Contact'];
 
 const theme = createTheme({
     palette: {
@@ -41,11 +35,9 @@ const theme = createTheme({
 
 
 
-
-
 const Root = () => {
 
-    const [value, setValue] = React.useState(0);
+    const [value, setValue] = React.useState(3);
     const handleChange = (event: React.SyntheticEvent, newValue: number) => {
         setValue(newValue);
     };

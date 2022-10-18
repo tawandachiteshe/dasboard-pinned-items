@@ -1,7 +1,6 @@
 import {Card, Grid, Typography} from "@mui/material";
-import React, {useState} from "react";
+import React from "react";
 import {Item} from "../types/types";
-import {useDispatch} from "react-redux";
 import {pinItem, unpinItem} from "../redux/slices/itemsSlice";
 import {useAppDispatch} from "../hooks";
 

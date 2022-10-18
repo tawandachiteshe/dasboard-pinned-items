@@ -1,9 +1,8 @@
-import {Card, CardContent, Grid, Typography, TypographyVariant} from "@mui/material";
+import {Grid, Typography} from "@mui/material";
 import React from "react";
 import {selectItems} from "../redux/slices/itemsSlice";
 import {useAppSelector} from "../hooks";
 import {CardItem} from "./Card";
-import {Item} from "../types/types";
 
 export const Dashboard: React.FC<{ value: number }> = ({ value }) => {
 
