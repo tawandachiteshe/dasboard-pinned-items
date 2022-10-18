@@ -22,13 +22,14 @@ const cardStyle = {
 export const CardItem: React.FC<{ item: Item }> = ({ item}) => {
 
 
-    const { name, page, isPinned, isDashboard, color } = item;
+    const { name, page, isPinned, isDashboard, color, index } = item;
 
 
     const dispatch = useAppDispatch()
 
     const itemClicked = () => {
 
+        console.log("clicked")
 
         let tempItem = {...item};
 
@@ -41,9 +42,8 @@ export const CardItem: React.FC<{ item: Item }> = ({ item}) => {
 
     }
 
-
     return (
-        <Grid item>
+        <Grid item data-testid={`${name}-${index}`}>
             <Card onClick={itemClicked} sx={{...cardStyle, backgroundColor: color}}>
                 <Typography justifySelf="center">
                     {name}

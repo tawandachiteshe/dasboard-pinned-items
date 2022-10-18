@@ -14,7 +14,7 @@ export const Dashboard: React.FC<{ value: number }> = ({ value }) => {
 
     return (
         <Grid sx={{ display: value !== 3 ? "none" : "flex" }} spacing={2} container item display="flex" justifyContent="center" mt={2} direction="row" p={2}>
-            { sortedItems.length === 0 ? <Typography>No pinned items.</Typography> : <></> }
+            { sortedItems.length === 0 ? <Typography data-testid="no-pinned-items">{"No pinned items."}</Typography> : <></> }
             { sortedItems.map(value => (<CardItem key={value.index} item={value}/>)) }
         </Grid>
     )

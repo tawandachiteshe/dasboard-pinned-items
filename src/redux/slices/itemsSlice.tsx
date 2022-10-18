@@ -78,7 +78,7 @@ export interface ItemsState {
     items: Item[]
 }
 
-const initialState: ItemsState = {
+export const initialState: ItemsState = {
     items: [...pageOneItems, ...pageTwoItems]
 }
 

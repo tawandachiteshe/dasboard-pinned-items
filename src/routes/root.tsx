@@ -81,8 +81,11 @@ const Root = () => {
                     <Typography sx={{m: "auto"}}>
                         Dashboard
                     </Typography>
-                    <Button sx={{borderRadius: 25, m: "auto"}} endIcon={<AddCircleIcon/>}
-                            variant="contained">Add</Button>
+                    <Button
+                        sx={{borderRadius: 25, m: "auto"}}
+                        endIcon={<AddCircleIcon/>} variant="contained">
+                        Add
+                    </Button>
                 </Grid>
 
                 <Dashboard value={value}/>
